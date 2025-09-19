@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import "tailwindcss";
+
+/* Add Google Font */
+@theme {
+  --font-lobster: "Lobster", cursive;
+  --color-primary: #7A030D;
+  --color-secondary: #EB3237;
+  --color-green: #117949;
+  --color-huegreen: #656A1D;
+  --color-blue: #3E3D8F;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #FDF0D5;
+}
+/* Custom scrollbar for webkit browsers */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #780000;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a00000;
+}
+
+.text-stroke {
+  -webkit-text-stroke: 0.051rem rgb(255, 255, 255); 
+  text-stroke: 0.051rem rgb(255, 255, 255); 
+  font-weight: 900;
+}
+
+.dropcap {
+  float: left;
+  font-size: 3.5rem;   /* adjust until it spans ~3 lines */
+  line-height: 1;
+  font-weight: 800;
+  color: #eab308;      /* yellow-500 in Tailwind */
+  margin: 0.1em 0.2em 0 0;
+}
+
+.dropcap-paragraph {
+  font-size: 1rem;     /* base paragraph size */
+  line-height: 1.6;
+}
+
+@keyframes scroll-x {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-scroll-x {
+  animation: scroll-x 20s linear infinite;
+}
+
+
+
+
+
